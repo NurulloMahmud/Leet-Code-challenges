@@ -20,8 +20,3 @@ class Solution(object):
         print(characters)
         return 0
     
-a=Solution()
-
-# print(a.lengthOfLongestSubstring(' '))
-
-print(len([' ']))
