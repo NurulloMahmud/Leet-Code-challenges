@@ -29,3 +29,5 @@ class Solution(object):
 
 test=Solution()
 print(test.lengthOfLongestSubstring(input("input a string/word to test: ")))
+
+# Runtime: Beats 69.94%of users with Python || Memory: Beats 41.79%of users with Python
