@@ -13,7 +13,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        letters = [i for i in s]    # getting every letter in a string
+        letters = [letter for letter in s]    # getting every letter in a string
         characters=[]   # stores unique characters
         characters_lenths=[]    # stores the length of unique characters only
 
