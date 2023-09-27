@@ -1,9 +1,9 @@
 # Leet-Code-challenges
 
-#### Hi there!
-#### I just keep track of my leet code solutions in this repository.
+#### Welcome to my Leet Code solutions repository!
+#### In this repository I document my Leet Code solutions.
 #### Feel free to comment your solution/question/suggestions
-#### Sometimes I use another source than Leet Code and you can find the links in all code files
+#### You can find the link to all problems in code files
 #### My Leet Code account: https://leetcode.com/nurullomahmud/
 ####
 ####
