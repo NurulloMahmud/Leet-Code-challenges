@@ -8,10 +8,6 @@ https://leetcode.com/problems/reverse-integer/description/
 
 class Solution(object):
     def reverse(self, x):
-        """
-        :type x: int
-        :rtype: int
-        """
         # reverse the x by converting it to str
         x = str(x)[::-1]
         # if x was less than 0, convert the str to int by multiplying -1

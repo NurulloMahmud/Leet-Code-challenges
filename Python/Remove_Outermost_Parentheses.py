@@ -7,18 +7,18 @@ https://leetcode.com/problems/remove-outermost-parentheses/description/
 
 class Solution:
     def removeOuterParentheses(self, s: str) -> str:
-        opener = '' # stores opening parenthesis
-        closer = '' # stores closing parenthesis
+        queue_ = '' # stores opening parenthesis
+        stack = '' # stores closing parenthesis
         result = '' # stores inner parenthesis
         temp = ''   # stores everything until we find both opening and closing parenthesis
         for i in s:
             if i=='(':
-                opener+=i
+                queue_+=i
             elif i==')':
-                closer+=i
+                stack+=i
             temp+=i
             # if both opening and closing parenthesis have same length and it's not 0, we reached the outer parenthesis
-            if len(opener) == len(closer) and len(opener) != 0:
+            if len(queue_) == len(stack) and len(queue_) != 0:
                 # store inner and disregard outers
                 result+=temp[1:-1]
                 temp=''

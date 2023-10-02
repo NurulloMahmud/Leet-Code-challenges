@@ -10,18 +10,15 @@ https://leetcode.com/problems/valid-parentheses/description/
 class Solution:
     def isValid(self, s: str) -> bool:
         # storing the opening brackets
-        opened=[]
+        stack=[]
         pairs = {')':'(', '}':'{', ']':'['}
         for i in s:
             if i in pairs.values():
-                opened.append(i)
+                stack.append(i)
             if i in '}])':
                 # check if last element before i was opening of the i
-                if not opened or opened[-1]!=pairs[i]:
+                if not stack or stack[-1]!=pairs[i]:
                     return False
-                opened.pop()
+                stack.pop()
 
-        return not opened
-
-a=Solution()
-print(a.isValid('({[}])'))
+        return not stack
